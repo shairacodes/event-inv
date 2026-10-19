@@ -4,6 +4,7 @@ export function startSaveTheDate(): void {
     date: "2027-05-01T14:00:00+08:00",
     location: "Bacolod City",
     note: "Formal Invitation To Follow",
+    doneMessage: "Today's the day",
   };
 
   const target = new Date(CONFIG.date).getTime();
