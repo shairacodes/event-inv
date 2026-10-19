@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Save the date</title>
+    <meta name="description" content="Save the date for our wedding." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Jost:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main>
+      <p class="kicker">
+        <svg viewBox="0 0 300 110" role="img" aria-label="Save the date">
+          <path id="kicker-curve" d="M 20 100 Q 150 -30 280 100" fill="none" />
+          <text>
+            <textPath href="#kicker-curve" startOffset="50%" text-anchor="middle">SAVE THE DATE</textPath>
+          </text>
+        </svg>
+      </p>
+      <img
+        class="stamp-photo"
+        src="/images/photo-stamp.png"
+        alt="Black and white photo of Meryl and Joshua in a postage stamp frame"
+        width="833"
+        height="923"
+      />
+      <h1 id="names">
+        <img src="/images/names.png" alt="Meryl and Joshua" width="1000" height="700" fetchpriority="high" />
+      </h1>
+      <p class="when" id="when"></p>
+      <p class="where" id="where"></p>
+
+      <div class="countdown" id="countdown" role="timer" aria-label="Time until the wedding">
+        <div><span id="days">0</span><small>days</small></div>
+        <div><span id="hours">00</span><small>hours</small></div>
+        <div><span id="minutes">00</span><small>minutes</small></div>
+        <div><span id="seconds">00</span><small>seconds</small></div>
+      </div>
+
+      <img
+        class="footer-img"
+        src="/images/footer-img.png"
+        alt="A photo of a gumamela flower"
+        width="919"
+        height="878"
+        loading="lazy"
+      />
+
+      <p class="note" id="note"></p>
+    </main>
+  </body>
+</html>
